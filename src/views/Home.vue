@@ -1,15 +1,13 @@
 <template>
-  <Luisa :design="design" v-model="viewModel"/>
 
-  
+  <SimpleUpload/>
 
 </template>
 
 
 <script>
 import app from './app.json'
-import selectFile from './components/SimpleUpload'
-import sendFile from './components/SimpleUpload'
+import SimpleUpload from './components/SimpleUpload.vue'
 
 
 export default {
@@ -26,11 +24,10 @@ export default {
     }
   },
   components: {
-
+    SimpleUpload
   },
+  
   methods: {
-    selectFile,
-    sendFile
-  }
+  },
 }
 </script>
